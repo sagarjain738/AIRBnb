@@ -1,0 +1,5 @@
+yarn create vite
+cd airbnb
+npm install 
+npm rund ev
+npm run dev
