@@ -2,7 +2,6 @@ const LocationBoxx = {
   baseStyle: {
     display: "flex",
     flexDirection: "column",
-    background: "red",
     borderRadius: "30px",
     background: "white",
     position: "absolute",

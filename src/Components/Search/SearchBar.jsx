@@ -1,4 +1,5 @@
 import { Flex, Divider, Text, Center, Input } from "@chakra-ui/react";
+import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
 export default function SearchBar({
@@ -6,7 +7,13 @@ export default function SearchBar({
   calender,
   searchBar,
   guestList,
+  getLocations,
 }) {
+  const [seacrhQuery, setSearchQuery] = useState("");
+  const handleData = (a) => {
+    // setSearchQuery(a);
+    getLocations(a);
+  };
   return (
     <Flex
       justifyContent="center"
@@ -55,6 +62,7 @@ export default function SearchBar({
           _placeholder={{ color: "#222222" }}
           cursor="text"
           onClick={() => searchBar(1)}
+          onChange={(a) => handleData(a.target.value)}
         ></Input>
       </Flex>
       {/* ************************************************************************** */}

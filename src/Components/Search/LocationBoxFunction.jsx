@@ -14,7 +14,7 @@ export default function LocationBox(props) {
       left="15.7rem"
       top="9.8rem"
       minWidth="31rem"
-      minHeight="10rem"
+      minHeight="2rem"
     >
       {children}
     </Box>

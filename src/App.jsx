@@ -7,17 +7,14 @@ import PictureHolder from "./Components/PictureHolder/PictureHolder";
 import DatePicker from "./Components/Calender/TripCalender2";
 import { useState } from "react";
 import Card from "./Components/Cards/CardsFunction";
-import { Box, Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link } from "@chakra-ui/react";
 import TaglineFirst from "./Components/TagLine/FirstTagLine";
 import Container2 from "./Components/Header/Container2";
 import LocationBox from "./Components/Search/LocationBoxFunction";
-import { FaGreaterThan } from "react-icons/fa";
-import { BiHomeCircle } from "react-icons/bi";
-import { RiSailboatLine } from "react-icons/ri";
-import { GiFishingBoat } from "react-icons/gi";
 import GuestList from "./Components/Guests/GuestFunction";
 import PictureGrid from "./Components/PictureHolder/PictureGrid";
-
+import SearchSuggestion from "./Components/Search/SearchSuggestions";
+import axios from "axios";
 function App() {
   const [position, setPosition] = useState({
     index: -2,
@@ -73,6 +70,9 @@ function App() {
       display: "",
     });
   };
+  const getLocations = async (a) => {
+    const result = await axios.get(`http://localhost:1111/cityName/${a}`);
+  };
 
   return (
     <>
@@ -84,6 +84,7 @@ function App() {
           calender={(index) => AdjustCalender(index)}
           searchBar={(index) => AdjustSearch(index)}
           guestList={(index) => adjustGuest(index)}
+          getLocations={(query) => getLocations(query)}
         ></SearchBar>
         <PictureHolder />
         <LocationBox index={positionTwo.index} display={positionTwo.display}>
@@ -120,6 +121,7 @@ function App() {
           index={positionGuest.index}
           display={positionGuest.display}
         ></GuestList>
+        <SearchSuggestion data="" />
       </Container>
       <Container2>
         <TaglineFirst></TaglineFirst>
