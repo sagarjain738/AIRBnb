@@ -1,4 +1,5 @@
-import { Box, useStyleConfig, Divider, Text } from "@chakra-ui/react";
+import { Box, useStyleConfig, Flex, Text } from "@chakra-ui/react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function SearchSuggestion(props) {
   const { variant, children, display, index, data, ...rest } = props;
@@ -12,9 +13,20 @@ export default function SearchSuggestion(props) {
       minWidth="31rem"
       minHeight="10rem"
       padding="2rem"
+      display={display}
+      zIndex={index}
     >
-      <Text marginBottom="1rem">Hi Sagar jain</Text>
-      <Divider></Divider>
+      <Flex textAlign="center" alignItems="center" marginBottom="1rem">
+        <Box
+          background="whitesmoke"
+          border=".1px solid lightgrey"
+          padding="1rem"
+          borderRadius="7px"
+        >
+          <FaMapMarkerAlt></FaMapMarkerAlt>
+        </Box>
+        <Text marginLeft="1rem">{data}</Text>
+      </Flex>
     </Box>
   );
 }

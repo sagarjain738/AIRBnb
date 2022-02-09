@@ -12,7 +12,7 @@ export default function SearchBar({
   const [seacrhQuery, setSearchQuery] = useState("");
   const handleData = (a) => {
     // setSearchQuery(a);
-    getLocations(a);
+    getLocations(a, 1);
   };
   return (
     <Flex
@@ -62,7 +62,7 @@ export default function SearchBar({
           _placeholder={{ color: "#222222" }}
           cursor="text"
           onClick={() => searchBar(1)}
-          onChange={(a) => handleData(a.target.value)}
+          onChange={(a) => handleData(a.target.value, 1)}
         ></Input>
       </Flex>
       {/* ************************************************************************** */}

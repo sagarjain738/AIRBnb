@@ -5,7 +5,7 @@ const LocationBoxx = {
     borderRadius: "30px",
     background: "white",
     position: "absolute",
-    padding: "2rem 0 0 2rem",
+    padding: "2rem 0 2rem 2rem",
     // fontSize: ".75rem",
     // letterSpacing: ".2px",
     // fontWeight: "bold",

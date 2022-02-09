@@ -70,8 +70,25 @@ function App() {
       display: "",
     });
   };
-  const getLocations = async (a) => {
+  const [loc, setLoc] = useState("");
+  const [showLocations, setShowLocations] = useState({
+    index: -4,
+    display: "none",
+  });
+
+  const getLocations = async (a, b) => {
     const result = await axios.get(`http://localhost:1111/cityName/${a}`);
+    setLoc(result.data[0].cityName + ",  " + result.data[0].state);
+
+    setPositionTwo({
+      index: -1,
+      display: "none",
+    });
+
+    setShowLocations({
+      index: 1,
+      display: "",
+    });
   };
 
   return (
@@ -84,44 +101,22 @@ function App() {
           calender={(index) => AdjustCalender(index)}
           searchBar={(index) => AdjustSearch(index)}
           guestList={(index) => adjustGuest(index)}
-          getLocations={(query) => getLocations(query)}
+          getLocations={(query, value) => getLocations(query, value)}
         ></SearchBar>
         <PictureHolder />
-        <LocationBox index={positionTwo.index} display={positionTwo.display}>
-          <Text
-            fontSize=".75rem"
-            letterSpacing=".2px"
-            fontWeight="bold"
-            color="rgb(34, 34, 34)"
-          >
-            GO ANYWHERE, ANYTIME
-          </Text>
-          <Flex
-            shadow="2xl"
-            borderRadius="30px"
-            marginTop="1rem"
-            width="92%"
-            height="3.7rem"
-            border=".1px solid #DDDDDD"
-            justifyContent="space-between"
-            alignItems="center"
-            padding="0 1rem"
-          >
-            <Link
-              color="rgb(111, 1, 156)"
-              fontWeight="bold"
-              fontSize="1.2rem"
-              _hover={{ textDecoration: "none" }}
-            >
-              I'm flexible
-            </Link>
-          </Flex>
-        </LocationBox>
+        <LocationBox
+          index={positionTwo.index}
+          display={positionTwo.display}
+        ></LocationBox>
         <GuestList
           index={positionGuest.index}
           display={positionGuest.display}
         ></GuestList>
-        <SearchSuggestion data="" />
+        <SearchSuggestion
+          data={loc}
+          index={showLocations.index}
+          display={showLocations.display}
+        />
       </Container>
       <Container2>
         <TaglineFirst></TaglineFirst>
