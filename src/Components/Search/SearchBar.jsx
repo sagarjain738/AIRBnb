@@ -12,7 +12,7 @@ export default function SearchBar({
   const [seacrhQuery, setSearchQuery] = useState("");
   const handleData = (a) => {
     // setSearchQuery(a);
-    getLocations(a, 1);
+    getLocations(a);
   };
   return (
     <Flex
