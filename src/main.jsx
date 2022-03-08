@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App2";
 import theme from "./Components/Theme/Theme";
 import { ChakraProvider } from "@chakra-ui/react";
+// import HotelFilter from "./Components/Filters/HotelFilters2";
 
 ReactDOM.render(
   <React.StrictMode>

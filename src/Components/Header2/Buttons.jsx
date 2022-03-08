@@ -13,6 +13,11 @@ export default function Buttons() {
 
   const [arrow, setArrow] = useState("down");
 
+  const [close, setClose] = useState({
+    index: -2,
+    display: "none",
+  });
+
   return (
     <Flex
       style={{
@@ -25,7 +30,7 @@ export default function Buttons() {
       }}
     >
       <CostSelection display={show.display} index={show.index}></CostSelection>
-      <HotelFilters />
+      <HotelFilters index={close.index} display={close.display} />
       <Button
         style={{
           background: "transparent",
@@ -101,6 +106,9 @@ export default function Buttons() {
           fontSize: "14.5px",
         }}
         _hover={{ border: ".5px solid black" }}
+        onClick={() => {
+          setClose({ display: "", index: 1 });
+        }}
       >
         <CgOptions fontWeight="bold"></CgOptions>
         Filters

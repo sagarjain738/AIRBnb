@@ -71,7 +71,8 @@ function App() {
     });
   };
 
-  const [loc, setLoc] = useState("");
+  const [loc, setLoc] = useState([]);
+
   const [showLocations, setShowLocations] = useState({
     index: -4,
     display: "none",
@@ -79,8 +80,7 @@ function App() {
 
   const getLocations = async (a) => {
     const result = await axios.get(`http://localhost:1111/cityName/${a}`);
-    setLoc(result.data[0].name + ",  " + result.data[0].state);
-
+    setLoc(result.data);
     setPositionTwo({
       index: -1,
       display: "none",
