@@ -1,4 +1,12 @@
-import { Flex, Text, Divider, Center, Link, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Divider,
+  Center,
+  Link,
+  Button,
+  Box,
+} from "@chakra-ui/react";
 import { FaAirbnb } from "react-icons/fa";
 import { BiSearch, BiGlobe } from "react-icons/bi";
 import { GoThreeBars } from "react-icons/go";
@@ -10,10 +18,11 @@ export default function () {
       style={{
         maxWidth: "1325px",
         margin: "auto",
+        padding: "0 0px 0 10px",
         marginTop: "1rem",
       }}
     >
-      <Flex justifyContent="space-evenly">
+      <Flex justifyContent="space-between">
         <Flex flexBasis="35%" justifyContent="flex-start" alignItems="center">
           <FaAirbnb fontSize="2.2rem" color="rgb(255, 56, 92)"></FaAirbnb>
           <Text
@@ -33,6 +42,7 @@ export default function () {
               borderRadius: "40px",
               alignItems: "center",
               border: "1px solid #DDDDDD",
+              minWidth: "30%",
             }}
             shadow="md"
           >
@@ -73,7 +83,7 @@ export default function () {
               alignItems: "center",
             }}
             justifyContent="space-evenly"
-            width="55%"
+            minWidth="55%"
           >
             <Link
               style={{

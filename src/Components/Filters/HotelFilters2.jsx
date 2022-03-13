@@ -15,7 +15,7 @@ export default function HotelFilter() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Button onClick={isOpen}> Open Modal</Button>
+      <Button onClick={onOpen}> Open Modal</Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>

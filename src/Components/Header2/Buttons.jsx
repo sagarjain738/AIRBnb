@@ -1,4 +1,20 @@
-import { Button, Center, Divider, Flex } from "@chakra-ui/react";
+import {
+  Button,
+  Center,
+  Divider,
+  Flex,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalBody,
+  ModalHeader,
+  ModalFooter,
+  ModalContent,
+  ModalCloseButton,
+  Box,
+  Text,
+} from "@chakra-ui/react";
+
 import { useState } from "react";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { CgOptions } from "react-icons/cg";
@@ -10,111 +26,170 @@ export default function Buttons() {
     index: -1,
     display: "none",
   });
-
   const [arrow, setArrow] = useState("down");
-
-  const [close, setClose] = useState({
-    index: -2,
-    display: "none",
-  });
+  const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
-    <Flex
-      style={{
-        alignItems: "center",
-        justifyContent: "space-evenly",
-        maxWidth: "1325px",
-        margin: "auto",
-        marginTop: ".3rem",
-        position: "relative",
-      }}
-    >
-      <CostSelection display={show.display} index={show.index}></CostSelection>
-      <HotelFilters index={close.index} display={close.display} />
-      <Button
+    <Box>
+      <Flex
         style={{
-          background: "transparent",
-          border: ".5px solid lightGrey",
-          borderRadius: "40px",
-          fontWeight: "500",
-          fontSize: "14.5px",
-          transition: ".2s",
-        }}
-        _hover={{ borderColor: "black" }}
-        onClick={() => {
-          setShow((a) => {
-            if (a.display === "none" && a.index === -1) {
-              setArrow("up");
-              return { index: 1, display: "" };
-            } else {
-              setArrow("down");
-              return { index: -1, display: "none" };
-            }
-          });
+          alignItems: "center",
+          maxWidth: "1325px",
+          margin: ".3rem auto auto auto",
+          // position: "relative",
+          justifyContent: "space-between",
+          paddingRight: "14px",
         }}
       >
-        Price
-        {arrow === "down" ? (
+        <CostSelection
+          display={show.display}
+          index={show.index}
+        ></CostSelection>
+        {/* <HotelFilters index={close.index} display={close.display} /> */}
+        <ModalWork onOpen={onOpen} isOpen={isOpen} onClose={onClose} />
+        <Button
+          style={{
+            background: "transparent",
+            border: ".5px solid lightGrey",
+            borderRadius: "40px",
+            fontWeight: "500",
+            fontSize: "13.5px",
+            transition: ".2s",
+          }}
+          _hover={{ borderColor: "black" }}
+          onClick={() => {
+            setShow((a) => {
+              if (a.display === "none" && a.index === -1) {
+                setArrow("up");
+                return { index: 1, display: "" };
+              } else {
+                setArrow("down");
+                return { index: -1, display: "none" };
+              }
+            });
+          }}
+        >
+          Price
+          {arrow === "down" ? (
+            <BiChevronDown fontSize="1.5rem"></BiChevronDown>
+          ) : (
+            <BiChevronUp fontSize="1.5rem"></BiChevronUp>
+          )}
+        </Button>
+        <Button
+          style={{
+            background: "transparent",
+            border: ".5px solid lightGrey",
+            borderRadius: "40px",
+            fontWeight: "500",
+            // fontSize: "13.5px",
+          }}
+          _hover={{ borderColor: "black" }}
+        >
+          Type of place
           <BiChevronDown fontSize="1.5rem"></BiChevronDown>
-        ) : (
-          <BiChevronUp fontSize="1.5rem"></BiChevronUp>
-        )}
-      </Button>
-      <Button
-        style={{
-          background: "transparent",
-          border: ".5px solid lightGrey",
-          borderRadius: "40px",
-          fontWeight: "500",
-          fontSize: "14.5px",
-        }}
-        _hover={{ borderColor: "black" }}
-      >
-        Type of place
-        <BiChevronDown fontSize="1.5rem"></BiChevronDown>
-      </Button>
-      <Center margin="0 5px" height="25px">
-        <Divider orientation="vertical"></Divider>
-      </Center>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Beachfront
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Pool
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Wifi
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Air conditioning
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Kitchen
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Free parking
-      </Button>
-      <Button variant="airBNB" _hover={{ borderColor: "black" }}>
-        Washing machine
-      </Button>
-      <Button
-        style={{
-          background: "transparent",
-          border: ".5px solid lightGrey",
-          borderRadius: "40px",
-          fontWeight: "500",
-          fontSize: "14.5px",
-        }}
-        _hover={{ border: ".5px solid black" }}
-        onClick={() => {
-          setClose({ display: "", index: 1 });
-        }}
-      >
-        <CgOptions fontWeight="bold"></CgOptions>
-        Filters
-      </Button>
-    </Flex>
+        </Button>
+        <Center margin="0 5px" height="25px">
+          <Divider orientation="vertical"></Divider>
+        </Center>
+        <Button
+          fontSize="14.5px"
+          variant="airBNB"
+          _hover={{ borderColor: "black" }}
+        >
+          Free cancellation
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Beachfront
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Pool
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Wifi
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Air conditioning
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Kitchen
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Free parking
+        </Button>
+        <Button
+          variant="airBNB"
+          fontSize="14.5px"
+          _hover={{ borderColor: "black" }}
+        >
+          Washing machine
+        </Button>
+        <Button
+          style={{
+            background: "transparent",
+            border: ".5px solid lightGrey",
+            borderRadius: "40px",
+            fontWeight: "500",
+            fontSize: "14.5px",
+            outlineColor: "transparent",
+          }}
+          outline="none"
+          _hover={{ border: ".5px solid black" }}
+          onClick={() => {
+            onOpen();
+          }}
+        >
+          <CgOptions style={{ fontWeight: "600" }}></CgOptions>
+          Filters
+        </Button>
+      </Flex>
+      <Divider marginTop={"1rem"}></Divider>
+    </Box>
   );
 }
 
-// size="airBNB" not working
+function ModalWork(props) {
+  const { onOpen, isOpen, onClose } = props;
+
+  return (
+    <Box>
+      <Modal isOpen={isOpen} size="3xl" onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          {/* <ModalCloseButton /> */}
+          {/* <ModalHeader>Heading</ModalHeader> */}
+          {/* <ModalBody> */}
+          <HotelFilters onClose={onClose} />
+          {/* </ModalBody> */}
+          {/* <ModalFooter>
+            <Button onClick={onClose}>Close</Button>
+          </ModalFooter> */}
+        </ModalContent>
+      </Modal>
+    </Box>
+  );
+}

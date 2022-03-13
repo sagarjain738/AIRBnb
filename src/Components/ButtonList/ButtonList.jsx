@@ -7,14 +7,14 @@ const Button = {
   },
   sizes: {
     airBNB: {
-      fontSize: "14.5px",
+      fontSize: "13px",
     },
   },
   variants: {
     airBNB: {
       border: ".5px solid lightGrey",
       borderRadius: "40px",
-      padding: "0 1.7rem",
+      padding: "0 .9rem",
     },
   },
   //   defaultProps: {
