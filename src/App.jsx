@@ -15,6 +15,15 @@ import GuestList from "./Components/Guests/GuestFunction";
 import PictureGrid from "./Components/PictureHolder/PictureGrid";
 import SearchSuggestion from "./Components/Search/SearchSuggestions";
 import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
+
+import {
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+} from "@chakra-ui/react";
+
 function App() {
   const [position, setPosition] = useState({
     index: -2,
@@ -81,6 +90,10 @@ function App() {
   const getLocations = async (a) => {
     const result = await axios.get(`http://localhost:1111/cityName/${a}`);
     setLoc(result.data);
+    setPosition({
+      index: -2,
+      display: "none",
+    });
     setPositionTwo({
       index: -1,
       display: "none",
@@ -91,33 +104,56 @@ function App() {
       display: "",
     });
   };
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Container>
-        <DatePicker index={position.index} display={position.display} />
+        <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
+          <ModalOverlay bg="none">
+            <ModalContent>
+              <DatePicker index={position.index} display={position.display} />
+            </ModalContent>
+          </ModalOverlay>
+        </Modal>
+
         <Head></Head>
         <SearchBar
           styleColor="white"
           calender={(index) => AdjustCalender(index)}
           searchBar={(index) => AdjustSearch(index)}
           guestList={(index) => adjustGuest(index)}
-          getLocations={(query, value) => getLocations(query, value)}
+          getLocations={(query) => getLocations(query)}
+          onOpen={onOpen}
         ></SearchBar>
         <PictureHolder />
-        <LocationBox
-          index={positionTwo.index}
-          display={positionTwo.display}
-        ></LocationBox>
-        <GuestList
-          index={positionGuest.index}
-          display={positionGuest.display}
-        ></GuestList>
+
+        <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
+          <ModalOverlay bg="none">
+            <ModalContent>
+              <LocationBox
+                index={positionTwo.index}
+                display={positionTwo.display}
+              ></LocationBox>
+            </ModalContent>
+          </ModalOverlay>
+        </Modal>
+
+        <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
+          <ModalOverlay bg="none">
+            <ModalContent>
+              <GuestList
+                index={positionGuest.index}
+                display={positionGuest.display}
+              ></GuestList>
+            </ModalContent>
+          </ModalOverlay>
+        </Modal>
+
         <SearchSuggestion
           data={loc}
           index={showLocations.index}
           display={showLocations.display}
-        />
+        ></SearchSuggestion>
       </Container>
       <Container2>
         <TaglineFirst></TaglineFirst>
@@ -160,5 +196,13 @@ function App() {
 export default App;
 
 // react-router-dom
-
 // https://reqres.in/
+
+// https://kiarash-z.github.io/react-modern-calendar-datepicker/
+// https://reactnicedates.hernansartorio.com/
+
+// http://engine.hotellook.com/api/v2/lookup.json?query=moscow&lang=ru&lookFor=both&limit=1&token=PasteYourTokenHere
+
+// https://airbnb.io/visx/gallery
+// https://www.chartjs.org/
+// chlakra modal

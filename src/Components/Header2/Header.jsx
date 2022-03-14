@@ -11,8 +11,10 @@ import { FaAirbnb } from "react-icons/fa";
 import { BiSearch, BiGlobe } from "react-icons/bi";
 import { GoThreeBars } from "react-icons/go";
 import { FaUserCircle } from "react-icons/fa";
+import { useParams } from "react-router-dom";
 
 export default function () {
+  const params = useParams();
   return (
     <div
       style={{
@@ -47,7 +49,7 @@ export default function () {
             shadow="md"
           >
             <Text fontSize=".9rem" fontWeight="550" marginLeft="1.5rem">
-              Goa
+              {params.location}
             </Text>
             <Center margin="0 15px" height="25px">
               <Divider orientation="vertical"></Divider>

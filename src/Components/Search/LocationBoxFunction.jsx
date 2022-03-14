@@ -11,10 +11,10 @@ export default function LocationBox(props) {
       {...rest}
       zIndex={index}
       transition="0.4s"
-      left="15.7rem"
-      top="9.8rem"
-      minWidth="31rem"
-      minHeight="2rem"
+      left="-13rem"
+      top="6rem"
+      minWidth="25rem"
+      minHeight="10.2rem"
     >
       <Text
         fontSize=".75rem"

@@ -2,18 +2,44 @@ import { Flex, Divider, Text, Center, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
+import { Link, Routes, Route, Navigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+
 export default function SearchBar({
   styleColor,
   calender,
   searchBar,
   guestList,
   getLocations,
+  onOpen,
 }) {
   const [seacrhQuery, setSearchQuery] = useState("");
   const handleData = (a) => {
     // setSearchQuery(a);
     getLocations(a);
   };
+  const { location, startDate, endDate, adults, childrens, infants, pets } =
+    useSelector((store) => store);
+  const dispatch = useDispatch();
+
+  const [nextRoute, setNextRoute] = useState("/");
+
+  const sendToRoute = () => {
+    if (
+      location === "" ||
+      startDate === 0 ||
+      endDate === 0 ||
+      adults === 0 ||
+      childrens === 0 ||
+      infants === 0 ||
+      pets === 0
+    ) {
+      <Navigate to="/"></Navigate>;
+    } else {
+      setNextRoute(`/hotelinfo/${location}`);
+    }
+  };
+
   return (
     <Flex
       justifyContent="center"
@@ -43,7 +69,10 @@ export default function SearchBar({
           fontWeight="600"
           marginLeft="1.8rem"
           cursor="pointer"
-          onClick={() => searchBar(1)}
+          onClick={() => {
+            searchBar(1);
+            onOpen();
+          }}
         >
           Location
         </Text>
@@ -61,7 +90,10 @@ export default function SearchBar({
           focusBorderColor="white"
           _placeholder={{ color: "#222222" }}
           cursor="text"
-          onClick={() => searchBar(1)}
+          onClick={() => {
+            searchBar(1);
+            onOpen();
+          }}
           onChange={(a) => handleData(a.target.value, 1)}
         ></Input>
       </Flex>
@@ -79,13 +111,20 @@ export default function SearchBar({
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
         cursor="pointer"
-        onClick={() => calender(1)}
+        onClick={() => {
+          calender(1);
+          onOpen();
+        }}
       >
         <Text
           fontSize="14px"
           fontWeight="600"
           marginLeft="1.7rem"
           cursor="pointer"
+          onClick={() => {
+            calender(1);
+            onOpen();
+          }}
         >
           Check in
         </Text>
@@ -100,6 +139,10 @@ export default function SearchBar({
           color="grey"
           background="transparent"
           _hover={{ background: "transparent" }}
+          onClick={() => {
+            calender(1);
+            onOpen();
+          }}
         >
           Ad dates
         </Text>
@@ -119,13 +162,20 @@ export default function SearchBar({
         transition=".2s"
         fontSize="14px"
         cursor="pointer"
-        onClick={() => calender(1)}
+        onClick={() => {
+          calender(1);
+          onOpen();
+        }}
       >
         <Text
           fontSize="14px"
           fontWeight="600"
           marginLeft="1.7rem"
           cursor="pointer"
+          onClick={() => {
+            calender(1);
+            onOpen();
+          }}
         >
           Check out
         </Text>
@@ -140,6 +190,10 @@ export default function SearchBar({
           _hover={{ background: "transparent" }}
           fontSize="14px"
           color="grey"
+          onClick={() => {
+            calender(1);
+            onOpen();
+          }}
         >
           Add dates
         </Text>
@@ -165,7 +219,10 @@ export default function SearchBar({
           fontWeight="600"
           marginLeft="1.7rem"
           cursor="pointer"
-          onClick={() => guestList(1)}
+          onClick={() => {
+            guestList(1);
+            onOpen();
+          }}
         >
           Guests
         </Text>
@@ -176,7 +233,10 @@ export default function SearchBar({
           background="transparent"
           fontSize="14px"
           color="grey"
-          onClick={() => guestList(1)}
+          onClick={() => {
+            guestList(1);
+            onOpen();
+          }}
         >
           Add guests
         </Text>
@@ -194,13 +254,11 @@ export default function SearchBar({
         justifyContent="center"
         alignItems="center"
         _hover={{ background: "#92174D" }}
-        onClick={() => searchBar(1)}
       >
-        <BiSearch fontSize="1.5rem" color="white" cursor="pointer"></BiSearch>
+        <Link to={`/hotelinfo/${location}`}>
+          <BiSearch fontSize="1.5rem" color="white" cursor="pointer"></BiSearch>
+        </Link>
       </Flex>
     </Flex>
   );
 }
-
-// https://kiarash-z.github.io/react-modern-calendar-datepicker/
-// https://reactnicedates.hernansartorio.com/

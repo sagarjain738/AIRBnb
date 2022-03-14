@@ -5,7 +5,7 @@ import HotelResult from "./Components/HotelResults/HotelResult";
 import { Box } from "@chakra-ui/react";
 import Footer from "./Components/Footer/Footer";
 
-export default function App() {
+export default function App2() {
   return (
     <>
       <div>

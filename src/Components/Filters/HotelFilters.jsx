@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 import "@fontsource/flow-circular";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { useBoolean } from "@chakra-ui/react";

@@ -5,8 +5,11 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { Flex, Box } from "@chakra-ui/react";
 import DefinedRange from "react-date-range/dist/components/DefinedRange";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function DatePicker({ index, display }) {
+  const { startDate, endDate } = useSelector((store) => store);
+
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -14,7 +17,9 @@ export default function DatePicker({ index, display }) {
       key: "selection",
     },
   ]);
-  // console.log(state);
+
+  console.log(state);
+
   return (
     <Box
       display={display}
@@ -23,8 +28,8 @@ export default function DatePicker({ index, display }) {
       width="800px"
       height="50vh"
       margin="auto"
-      left="14rem"
-      top="10rem"
+      left="-14rem"
+      top="6rem"
       borderLeft="30px"
       transition="0.4s"
     >
