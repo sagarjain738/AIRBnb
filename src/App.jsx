@@ -7,7 +7,7 @@ import PictureHolder from "./Components/PictureHolder/PictureHolder";
 import DatePicker from "./Components/Calender/TripCalender2";
 import { useState } from "react";
 import Card from "./Components/Cards/CardsFunction";
-import { Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import TaglineFirst from "./Components/TagLine/FirstTagLine";
 import Container2 from "./Components/Header/Container2";
 import LocationBox from "./Components/Search/LocationBoxFunction";
@@ -16,7 +16,6 @@ import PictureGrid from "./Components/PictureHolder/PictureGrid";
 import SearchSuggestion from "./Components/Search/SearchSuggestions";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-
 import {
   useDisclosure,
   Modal,
@@ -79,7 +78,6 @@ function App() {
       display: "",
     });
   };
-
   const [loc, setLoc] = useState([]);
 
   const [showLocations, setShowLocations] = useState({

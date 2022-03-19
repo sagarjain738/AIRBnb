@@ -8,8 +8,8 @@ export default function Head({ children }) {
   return (
     <Flex
       justifyContent="space-between"
-      height="12.5vh"
-      maxW="1200px"
+      height="8%"
+      maxW="90%"
       m="auto"
       bg="black"
       color="white"

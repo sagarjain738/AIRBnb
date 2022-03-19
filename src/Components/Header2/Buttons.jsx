@@ -6,13 +6,8 @@ import {
   useDisclosure,
   Modal,
   ModalOverlay,
-  ModalBody,
-  ModalHeader,
-  ModalFooter,
   ModalContent,
-  ModalCloseButton,
   Box,
-  Text,
 } from "@chakra-ui/react";
 
 import { useState } from "react";
@@ -22,30 +17,42 @@ import CostSelection from "../CostSelection/CostSelection";
 import HotelFilters from "../Filters/HotelFilters";
 
 export default function Buttons() {
+  const { onOpen, isOpen, onClose } = useDisclosure();
   const [show, setShow] = useState({
     index: -1,
     display: "none",
   });
   const [arrow, setArrow] = useState("down");
-  const { onOpen, isOpen, onClose } = useDisclosure();
 
   return (
     <Box>
       <Flex
         style={{
           alignItems: "center",
-          maxWidth: "1325px",
+          maxWidth: "98%",
           margin: ".3rem auto auto auto",
           // position: "relative",
-          justifyContent: "space-between",
-          paddingRight: "14px",
+          justifyContent: "space-around",
+          paddingRight: ".5%",
         }}
       >
+        {/* <Modal onOpen={onOpen} isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay>
+            <ModalContent>
+              <CostSelection
+                display={show.display}
+                index={show.index}
+              ></CostSelection>
+            </ModalContent>
+          </ModalOverlay>
+        </Modal> */}
         <CostSelection
           display={show.display}
           index={show.index}
         ></CostSelection>
+
         {/* <HotelFilters index={close.index} display={close.display} /> */}
+
         <ModalWork onOpen={onOpen} isOpen={isOpen} onClose={onClose} />
         <Button
           style={{
@@ -173,7 +180,7 @@ export default function Buttons() {
 }
 
 function ModalWork(props) {
-  const { onOpen, isOpen, onClose } = props;
+  const { isOpen, onClose } = props;
 
   return (
     <Box>

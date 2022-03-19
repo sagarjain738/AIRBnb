@@ -1,19 +1,11 @@
-import {
-  Box,
-  useStyleConfig,
-  Flex,
-  Text,
-  Button,
-  Link,
-  textDecoration,
-} from "@chakra-ui/react";
+import { Box, useStyleConfig, Flex } from "@chakra-ui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import { useSelector, useDispatch } from "react-redux";
 import { addLocation } from "../GlobalStatesRedux/action";
 
 export default function SearchSuggestion(props) {
-  const { variant, children, display, index, data, ...rest } = props;
+  const { variant, children, display, index, data, onOpen, ...rest } = props;
   const styless = useStyleConfig("LocationBoxx", { variant });
   const store = useSelector((store) => store);
   const dispatch = useDispatch();
@@ -23,15 +15,25 @@ export default function SearchSuggestion(props) {
       top="10rem"
       __css={styless}
       minWidth="25rem"
-      minHeight="8rem"
-      padding="2rem 2rem 0 2rem"
+      minHeight="9rem"
+      padding="1.5rem 0 .5rem 0"
       display={display}
       zIndex={index}
     >
       {data.map((a, b) => {
         if (b <= 4) {
           return (
-            <Flex textAlign="center" alignItems="center" marginBottom=".85rem">
+            <Flex
+              textAlign="center"
+              _hover={{
+                cursor: "pointer",
+                background: "lightGrey",
+              }}
+              alignItems="center"
+              padding=".5rem 0 .3rem 2rem"
+              height="100%"
+              width="100%"
+            >
               <Box
                 background="whitesmoke"
                 border=".1px solid lightgrey"
@@ -40,14 +42,14 @@ export default function SearchSuggestion(props) {
               >
                 <FaMapMarkerAlt></FaMapMarkerAlt>
               </Box>
-              <Button
+              <Box
                 variant="ghost"
-                _hover={{ textDecoration: "none" }}
+                _hover={{ textDecoration: "none", background: "lightGrey" }}
                 marginLeft="1rem"
                 onClick={() => dispatch(addLocation(a.name))}
               >
                 {a.name}, {a.state}
-              </Button>
+              </Box>
             </Flex>
           );
         } else {

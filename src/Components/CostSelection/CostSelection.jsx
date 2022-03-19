@@ -12,6 +12,7 @@ import {
   Input,
   Link,
 } from "@chakra-ui/react";
+
 import React, { useEffect } from "react";
 import { BiMinus } from "react-icons/bi";
 

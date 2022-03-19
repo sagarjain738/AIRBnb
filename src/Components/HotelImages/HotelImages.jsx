@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Image } from "@chakra-ui/react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
@@ -9,7 +10,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import "./styles.css";
-
 // import required modules
 
 export default function ImageSlider() {

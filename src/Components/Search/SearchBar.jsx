@@ -1,8 +1,8 @@
-import { Flex, Divider, Text, Center, Input } from "@chakra-ui/react";
+import { Flex, Divider, Text, Center, Input, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
-import { Link, Routes, Route, Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 export default function SearchBar({
@@ -20,48 +20,30 @@ export default function SearchBar({
   };
   const { location, startDate, endDate, adults, childrens, infants, pets } =
     useSelector((store) => store);
+
   const dispatch = useDispatch();
-
-  const [nextRoute, setNextRoute] = useState("/");
-
-  const sendToRoute = () => {
-    if (
-      location === "" ||
-      startDate === 0 ||
-      endDate === 0 ||
-      adults === 0 ||
-      childrens === 0 ||
-      infants === 0 ||
-      pets === 0
-    ) {
-      <Navigate to="/"></Navigate>;
-    } else {
-      setNextRoute(`/hotelinfo/${location}`);
-    }
-  };
 
   return (
     <Flex
       justifyContent="center"
       alignItems="center"
       background={styleColor}
-      width="850px"
-      height="10vh"
+      width="64%"
+      minHeight="7%"
       margin="0 auto 2rem auto"
-      borderRadius="40px"
+      borderRadius="full"
       position="relative"
     >
-      <Flex
-        background="white"
-        height="10vh"
+      {/* ************************** FIRST COMPONENT ************************************************ */}
+      <Box
         flexBasis="30%"
-        direction="column"
-        justifyContent="space-evenly"
         borderRadius="40px"
         textAlign="left"
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
         cursor="pointer"
+        padding="1.2% 0"
+        height="100%"
         onClick={() => searchBar(1)}
       >
         <Text
@@ -91,26 +73,27 @@ export default function SearchBar({
           _placeholder={{ color: "#222222" }}
           cursor="text"
           onClick={() => {
-            searchBar(1);
             onOpen();
+            searchBar(1);
           }}
-          onChange={(a) => handleData(a.target.value, 1)}
+          onChange={(a) => {
+            searchBar(-5);
+            handleData(a.target.value);
+          }}
         ></Input>
-      </Flex>
-      {/* ************************************************************************** */}
+      </Box>
+      {/* ************************** SECOND COMPONENT ************************************************ */}
       <Center height="35px">
         <Divider orientation="vertical" />
       </Center>
-      <Flex
+      <Box
         background="white"
-        height="10vh"
         flexBasis="20%"
-        direction="column"
-        justifyContent="space-around"
         borderRadius="40px"
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
         cursor="pointer"
+        padding="1.2% 0"
         onClick={() => {
           calender(1);
           onOpen();
@@ -130,7 +113,6 @@ export default function SearchBar({
         </Text>
         <Text
           cursor="pointer"
-          marginTop="-1.5rem"
           marginLeft="1.7rem"
           fontSize="14px"
           variant="unstyled"
@@ -146,17 +128,15 @@ export default function SearchBar({
         >
           Ad dates
         </Text>
-      </Flex>
-      {/* ************************************************************************** */}
+      </Box>
+      {/* ************************** THIRD COMPONENT ************************************************ */}
       <Center height="35px">
         <Divider orientation="vertical" />
       </Center>
-      <Flex
+      <Box
         background="white"
-        height="10vh"
         flexBasis="20%"
-        direction="column"
-        justifyContent="space-around"
+        padding="1.2% 0"
         borderRadius="40px"
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
@@ -181,7 +161,6 @@ export default function SearchBar({
         </Text>
         <Text
           cursor="pointer"
-          marginTop="-1.5rem"
           marginLeft="1.7rem"
           variant="unstyled"
           placeholder="Add dates"
@@ -197,18 +176,17 @@ export default function SearchBar({
         >
           Add dates
         </Text>
-      </Flex>
+      </Box>
       {/* ************************************************************************** */}
       <Center height="35px">
         <Divider orientation="vertical" />
       </Center>
-      <Flex
+      <Box
         cursor="pointer"
         background="white"
-        height="10vh"
+        height="7%"
         flexBasis="30%"
-        direction="column"
-        justifyContent="space-around"
+        padding="1.2% 0"
         borderRadius="40px"
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
@@ -229,7 +207,6 @@ export default function SearchBar({
         <Text
           cursor="pointer"
           marginLeft="1.7rem"
-          marginTop="-1.5rem"
           background="transparent"
           fontSize="14px"
           color="grey"
@@ -240,7 +217,7 @@ export default function SearchBar({
         >
           Add guests
         </Text>
-      </Flex>
+      </Box>
       {/* ************************************************************************** */}
       <Flex
         cursor="pointer"

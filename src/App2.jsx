@@ -25,7 +25,9 @@ export default function App2() {
           <HotelResult />
         </Box>
       </div>
-      <Box>{/* <Footer /> */}</Box>
+      {/* <Box>
+        <Footer />
+      </Box> */}
     </>
   );
 }

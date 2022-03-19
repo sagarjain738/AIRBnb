@@ -7,12 +7,12 @@ const Button = {
   },
   sizes: {
     airBNB: {
-      fontSize: "13px",
+      fontSize: "13px", // Actual sm,md or xl size i ahve to provide and in that object the font Size
     },
   },
   variants: {
     airBNB: {
-      border: ".5px solid lightGrey",
+      border: "1px solid lightgray",
       borderRadius: "40px",
       padding: "0 .9rem",
     },

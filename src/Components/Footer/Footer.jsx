@@ -8,13 +8,15 @@ import { AiOutlineTwitter } from "react-icons/ai";
 export default function Footer() {
   return (
     <Box
-      minHeight="25rem"
-      top="150rem"
-      maxWidth="100vw"
+      minHeight="415%"
+      minWidth="98.8vw"
       margin="auto"
       padding="0 5rem"
       background="#f7f7f7"
       color="blackAlpha.700"
+      zIndex="100"
+      bottom="1%"
+      marginLeft="-1.5rem"
     >
       <Flex padding="2.7rem 0">
         <Box marginRight="4rem">
@@ -180,7 +182,12 @@ export default function Footer() {
       </Flex>
       <Divider></Divider>
       <Flex marginTop="1.7rem" justifyContent="space-between">
-        <Flex flexBasis="37%" justifyContent="space-between" fontSize="14.5px">
+        <Flex
+          flexBasis="37%"
+          justifyContent="space-between"
+          fontSize="14.5px"
+          color="blackAlpha.900"
+        >
           <Text>© 2022 Airbnb, Inc.</Text>
           <Text color="transparent">·</Text> <Text> Privacy </Text>
           <Text color="transparent">·</Text>

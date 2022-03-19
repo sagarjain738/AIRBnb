@@ -18,14 +18,22 @@ export default function () {
   return (
     <div
       style={{
-        maxWidth: "1325px",
+        maxWidth: "96%",
         margin: "auto",
-        padding: "0 0px 0 10px",
         marginTop: "1rem",
       }}
     >
       <Flex justifyContent="space-between">
-        <Flex flexBasis="35%" justifyContent="flex-start" alignItems="center">
+        {/* First Component */}
+
+        <Flex
+          _hover={{
+            cursor: "pointer",
+          }}
+          flexBasis="35%"
+          justifyContent="flex-start"
+          alignItems="center"
+        >
           <FaAirbnb fontSize="2.2rem" color="rgb(255, 56, 92)"></FaAirbnb>
           <Text
             fontSize="1.44rem"
@@ -37,7 +45,16 @@ export default function () {
             ɑirbnb
           </Text>
         </Flex>
-        <Flex flexBasis="30%" justifyContent="center">
+
+        {/* second Component */}
+
+        <Flex
+          _hover={{
+            cursor: "pointer",
+          }}
+          flexBasis="30%"
+          justifyContent="center"
+        >
           <Flex
             style={{
               minHeight: "3rem",
@@ -79,25 +96,50 @@ export default function () {
             </Flex>
           </Flex>
         </Flex>
-        <Flex flexBasis="35%" justifyContent="flex-end">
+
+        {/* Third Component */}
+
+        <Flex
+          _hover={{
+            cursor: "pointer",
+          }}
+          flexBasis="35%"
+          justifyContent="flex-end"
+        >
           <Flex
             style={{
               alignItems: "center",
             }}
             justifyContent="space-evenly"
-            minWidth="55%"
+            minWidth="58%"
           >
             <Link
               style={{
                 borderRadius: "40px",
                 fontWeight: "520",
                 fontSize: ".92rem",
+                padding: ".7rem 1rem",
               }}
               _hover={{ background: "#F7F7F7" }}
             >
               Become a host
             </Link>
-            <BiGlobe fontSize="1.2rem"></BiGlobe>
+            <Flex
+              padding=".9rem"
+              _hover={{
+                background: "#f8f8f8",
+              }}
+              justifyContent="center"
+              alignItems="center"
+              marginLeft="-.7rem"
+              borderRadius="full"
+            >
+              <BiGlobe
+                style={{
+                  fontSize: "1.2rem",
+                }}
+              ></BiGlobe>
+            </Flex>
             <Flex
               style={{
                 borderRadius: "40px",
