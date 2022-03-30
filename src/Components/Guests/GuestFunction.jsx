@@ -19,7 +19,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 
 export default function GuestList(props) {
-  const { variant, children, display, index, ...rest } = props;
+  const { variant, children, ...rest } = props;
   const styles = useStyleConfig("LocationBoxx", { variant });
   const { adults, childrens, pets, infants } = useSelector((store) => store);
 
@@ -37,6 +37,7 @@ export default function GuestList(props) {
       infants: infants,
       pets: pets,
     });
+    console.log("This is the persons list", adults, childrens, pets, infants);
   }, [adults, childrens, pets, infants]);
 
   const [textMessge, setTextMessge] = useState("");
@@ -57,7 +58,6 @@ export default function GuestList(props) {
   return (
     <>
       <Box
-        display={display}
         __css={styles}
         {...rest}
         transition="0.4s"
@@ -166,7 +166,6 @@ const Data = ({ guestList, textMessge }) => {
                       : dispatch(addAdults(1));
                     break;
                   case "childrens":
-                    console.log("inside the children", a.type);
                     childrens === 15
                       ? dispatch(addChildren(0))
                       : dispatch(addChildren(1));

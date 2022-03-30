@@ -2,7 +2,7 @@ import { Box, Divider, Flex, Text, Circle } from "@chakra-ui/react";
 import { AiOutlineHeart, AiTwotoneStar } from "react-icons/ai";
 import { BiRupee } from "react-icons/bi";
 import ImageSlider from "../HotelImages/HotelImages";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
 import {
   MdOutlineArrowBackIosNew,
@@ -19,26 +19,15 @@ import "swiper/css/pagination";
 import { useParams } from "react-router";
 import axios from "axios";
 
-export default function Hotels() {
+export default function Hotels({ cityDetails, hotelDetails }) {
   const { location } = useSelector((store) => store);
-  const size = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-  ];
   const param = useParams();
-  const [cityDetails, setcityDetails] = useState();
-  const instance = axios.create({
-    baseURL: "http://localhost:1111/",
-    timeout: 1000,
-  });
-
-  useEffect(async () => {
-    const result = await axios.get(
-      `http://localhost:1111/cityDetails/${param.location}`
-    );
-    setcityDetails(result);
-  }, []);
-
-  // console.log("Requested hotel info", cityDetails.data);
+  const city = cityDetails;
+  const hotel = hotelDetails;
+  // const instance = axios.create({
+  //   baseURL: "http://localhost:1111/",
+  //   timeout: 1000,
+  // });
 
   const pagination = {
     clickable: true,
@@ -46,15 +35,23 @@ export default function Hotels() {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
+  const [hotelinfo, setHotelInfo] = useState([]);
+  const getHotels = async () => {
+    const result = await axios.get("http://localhost:1111/hotellist");
+    setHotelInfo(result.data);
+  };
+  useEffect(() => {
+    getHotels();
+  }, []);
 
   return (
     <>
       <Box padding="1.3rem 1.5rem">
         <Text fontSize="14px" fontWeight="500">
-          300+ stays in {location}
+          {hotelinfo.length}+ stays in {location}
         </Text>
         <Divider margin="1.2rem 0"></Divider>
-        {size.map((a, b) => {
+        {hotelinfo.map((a, b) => {
           return (
             <Box key={b}>
               <Box background="" position="relative">
@@ -103,7 +100,7 @@ export default function Hotels() {
                         paddingRight="2.7rem"
                       >
                         <Text fontSize="15px" color="grey">
-                          Entire rental unit in Candolim
+                          {a.tag}
                         </Text>
                         <Text
                           letterSpacing="-.3px"
@@ -112,22 +109,36 @@ export default function Hotels() {
                           overflow="hidden"
                           textOverflow="ellipsis"
                         >
-                          Modern & well-equipped Apt. 7 mins to the beach
+                          {a.title}
                         </Text>
                         <Divider width="2rem" margin=".5rem 0"></Divider>
                         <Text fontSize="15px" color="grey">
-                          2 guests.1bedroom.1bed.1bathroom
+                          {/* 2 guests.1bedroom.1bed.1bathroom */}
+                          {a.capacity}
+                          {a.bedrooms}
+                          {a.beds}
+                          {a.bathroom}
                         </Text>
-                        <Text fontSize="15px" color="grey">
-                          Wifi.Air conditioning.kitchen
-                        </Text>
+
+                        {/* Wifi.Air conditioning.kitchen */}
+                        {a.features.map((a, b) => {
+                          <span
+                            style={{
+                              fontSize: "15px",
+                              color: "grey",
+                            }}
+                          >
+                            {a}" "
+                          </span>;
+                        })}
+
                         <Flex
                           height="44%"
                           width="110%"
                           justifyContent="space-between"
                           alignItems="flex-end"
                         >
-                          <Flex alignItems="center">
+                          <Flex>
                             <AiTwotoneStar
                               style={{ color: "#FF385C", marginTop: "4px" }}
                             ></AiTwotoneStar>
@@ -138,7 +149,8 @@ export default function Hotels() {
                                 fontWeight: "550",
                               }}
                             >
-                              4.75{" "}
+                              {a.stars}
+                              <span> </span>
                               <span
                                 style={{
                                   color: "gray",
@@ -146,7 +158,8 @@ export default function Hotels() {
                                   fontSize: ".9rem",
                                 }}
                               >
-                                (53 reviews)
+                                {/* (53 reviews) */}
+                                {a.reviews}
                               </span>
                             </span>
                           </Flex>
@@ -161,6 +174,7 @@ export default function Hotels() {
                                 }}
                               >
                                 1,197
+                                {/* {a.cost} */}
                               </span>
                               / night
                             </span>

@@ -1,15 +1,16 @@
 import { addDays } from "date-fns";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { Flex, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import DefinedRange from "react-date-range/dist/components/DefinedRange";
 import { useSelector, useDispatch } from "react-redux";
+import { addStartDate, addEndDate } from "../GlobalStatesRedux/action";
 
-export default function DatePicker({ index, display }) {
+export default function DatePicker() {
   const { startDate, endDate } = useSelector((store) => store);
-
+  const dispatch = useDispatch();
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -17,13 +18,13 @@ export default function DatePicker({ index, display }) {
       key: "selection",
     },
   ]);
-
-  console.log(state);
+  useEffect(() => {
+    dispatch(addStartDate(state[0].startDate));
+    dispatch(addEndDate(state[0].endDate));
+  }, [state]);
 
   return (
     <Box
-      display={display}
-      zIndex={index}
       style={{ position: "absolute" }}
       width="800px"
       height="50vh"

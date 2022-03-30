@@ -8,10 +8,11 @@ const initialData = {
     childrens: 0,
     infants: 0,
     pets: 0,
+    lat: 0,
+    lang: 0,
 };
 
 export default function reducerFunction(store = initialData, action) {
-    console.log("inside the reducer");
     switch (action.type) {
         case actionTypes.ADD_LOCATION:
             return {...store, location: action.payload };
@@ -27,6 +28,16 @@ export default function reducerFunction(store = initialData, action) {
             return {...store, infants: store.infants + action.payload };
         case actionTypes.ADD_PETS:
             return {...store, pets: store.pets + action.payload };
+        case actionTypes.ADD_LAT:
+            return {
+                ...store,
+                lat: action.payload === undefined ? 0 : action.payload,
+            };
+        case actionTypes.ADD_LANG:
+            return {
+                ...store,
+                lang: action.payload === undefined ? 0 : action.payload,
+            };
         default:
             return store;
     }

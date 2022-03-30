@@ -1,15 +1,22 @@
-import { useStyleConfig, Box, Text, Flex, Link } from "@chakra-ui/react";
+import {
+  useStyleConfig,
+  Box,
+  Text,
+  Flex,
+  Link,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+} from "@chakra-ui/react";
 
 export default function LocationBox(props) {
-  const { variant, children, index, display, ...rest } = props;
+  const { variant, children, ...rest } = props;
   const styles = useStyleConfig("LocationBoxx", { variant });
 
   return (
     <Box
-      display={display}
       __css={styles}
       {...rest}
-      zIndex={index}
       transition="0.4s"
       left="-13rem"
       top="6rem"

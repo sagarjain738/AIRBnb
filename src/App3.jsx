@@ -7,6 +7,7 @@ export default function MainApp() {
     <Routes>
       <Route path="/" element={<App></App>}></Route>
       <Route path="/hotelinfo/:location" element={<App2></App2>}></Route>
+      {/* <Route path="/hotelinfo/:location" element={<App2></App2>}></Route> */}
     </Routes>
   );
 }

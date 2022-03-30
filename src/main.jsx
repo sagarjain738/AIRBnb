@@ -12,6 +12,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Provider } from "react-redux";
 import store from "./Components/GlobalStatesRedux/store";
 import { BrowserRouter } from "react-router-dom";
+import "./swiper.css";
 
 ReactDOM.render(
   <React.StrictMode>

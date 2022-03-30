@@ -1,26 +1,53 @@
-import {
-  Flex,
-  Text,
-  Divider,
-  Center,
-  Link,
-  Button,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Text, Divider, Center } from "@chakra-ui/react";
 import { FaAirbnb } from "react-icons/fa";
 import { BiSearch, BiGlobe } from "react-icons/bi";
 import { GoThreeBars } from "react-icons/go";
 import { FaUserCircle } from "react-icons/fa";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import dayjs from "dayjs";
+import { Link } from "react-router-dom";
+import GuestList from "../Guests/GuestFunction";
+import DatePicker from "../Calender/TripCalender2";
+import {
+  ModalOverlay,
+  Modal,
+  ModalContent,
+  useDisclosure,
+} from "@chakra-ui/react";
+
+import SearchBar from "../Search/SearchBar";
 
 export default function () {
   const params = useParams();
+  const {
+    location,
+    startDate,
+    endDate,
+    adults,
+    childrens,
+    infants,
+    pets,
+    lat,
+    lang,
+  } = useSelector((store) => store);
+
+  const startingDate = dayjs(startDate).format("D MMM");
+  const endingDate = dayjs(endDate).format("D MMM");
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const {
+  //   isOpen: isOpenCalender,
+  //   onOpen: onOpenCalender,
+  //   onClose: onCloseCalender,
+  // } = useDisclosure();
+
   return (
     <div
       style={{
         maxWidth: "96%",
         margin: "auto",
         marginTop: "1rem",
+        // marginBottom: "1rem",
       }}
     >
       <Flex justifyContent="space-between">
@@ -33,17 +60,22 @@ export default function () {
           flexBasis="35%"
           justifyContent="flex-start"
           alignItems="center"
+          onClick={() => {}}
         >
           <FaAirbnb fontSize="2.2rem" color="rgb(255, 56, 92)"></FaAirbnb>
-          <Text
-            fontSize="1.44rem"
-            fontWeight="650"
-            color="rgb(255, 56, 92)"
-            marginTop="-2px"
-            letterSpacing="-1px"
+          <Link
+            style={{
+              fontSize: "1.44rem",
+              fontWeight: "650",
+              color: "rgb(255, 56, 92)",
+              marginTop: "-2px",
+              letterSpacing: "-1px",
+              textDecoration: "none",
+            }}
+            to={"/"}
           >
             ɑirbnb
-          </Text>
+          </Link>
         </Flex>
 
         {/* second Component */}
@@ -71,14 +103,23 @@ export default function () {
             <Center margin="0 15px" height="25px">
               <Divider orientation="vertical"></Divider>
             </Center>
-            <Text fontSize=".9rem" fontWeight="550">
-              4 Mar - 3Apr
+            <Text fontSize=".9rem" fontWeight="600">
+              {startingDate} - {endingDate}
             </Text>
             <Center height="25px" margin="0 15px">
               <Divider orientation="vertical"></Divider>
             </Center>
-            <Text color="#B0B0B0" fontSize="1rem">
-              Add guests
+            <Text color="black" fontWeight="500" fontSize="1rem">
+              {/* //color="#B0B0B0" */}
+              {adults === 0
+                ? childrens === 0
+                  ? infants === 0
+                    ? pets === 0
+                      ? "add Guests"
+                      : adults + childrens + " guests"
+                    : adults + childrens + " guests"
+                  : adults + childrens + " guests"
+                : adults + childrens + " guests"}
             </Text>
             <Flex
               style={{
@@ -113,7 +154,7 @@ export default function () {
             justifyContent="space-evenly"
             minWidth="58%"
           >
-            <Link
+            <Text
               style={{
                 borderRadius: "40px",
                 fontWeight: "520",
@@ -123,7 +164,7 @@ export default function () {
               _hover={{ background: "#F7F7F7" }}
             >
               Become a host
-            </Link>
+            </Text>
             <Flex
               padding=".9rem"
               _hover={{

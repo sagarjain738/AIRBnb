@@ -22,7 +22,6 @@ export const addEndDate = (payload) => {
 };
 
 export const addAdults = (payload) => {
-    console.log(payload);
     return {
         type: actionTypes.ADD_ADULTS,
         payload,
@@ -46,6 +45,20 @@ export const addInfants = (payload) => {
 export const addPets = (payload) => {
     return {
         type: actionTypes.ADD_PETS,
+        payload,
+    };
+};
+
+export const addLat = (payload) => {
+    return {
+        type: actionTypes.ADD_LAT,
+        payload,
+    };
+};
+
+export const addLang = (payload) => {
+    return {
+        type: actionTypes.ADD_LANG,
         payload,
     };
 };

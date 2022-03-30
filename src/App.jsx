@@ -15,7 +15,7 @@ import GuestList from "./Components/Guests/GuestFunction";
 import PictureGrid from "./Components/PictureHolder/PictureGrid";
 import SearchSuggestion from "./Components/Search/SearchSuggestions";
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
+import Footer from "./Components/Footer/Footer2";
 import {
   useDisclosure,
   Modal,
@@ -24,135 +24,109 @@ import {
 } from "@chakra-ui/react";
 
 function App() {
-  const [position, setPosition] = useState({
-    index: -2,
-    display: "none",
-  });
-  const [positionTwo, setPositionTwo] = useState({
-    index: -1,
-    display: "none",
-  });
-  const [positionGuest, setPositionGuest] = useState({
-    index: -3,
-    display: "none",
-  });
-  const AdjustCalender = (newIndex) => {
-    setPosition({
-      index: newIndex,
-      display: "",
-    });
-    setPositionTwo({
-      index: -1,
-      display: "none",
-    });
-    setPositionGuest({
-      index: -2,
-      display: "none",
-    });
-  };
-  const AdjustSearch = (newIndex) => {
-    setPosition({
-      index: -2,
-      display: "none",
-    });
-    setPositionTwo({
-      index: newIndex,
-      display: "",
-    });
-    setPositionGuest({
-      index: -1,
-      display: "none",
-    });
-  };
-  const adjustGuest = (newIndex) => {
-    setPosition({
-      index: -2,
-      display: "none",
-    });
-    setPositionTwo({
-      index: newIndex,
-      display: "none",
-    });
-    setPositionGuest({
-      index: 1,
-      display: "",
-    });
-  };
   const [loc, setLoc] = useState([]);
-
-  const [showLocations, setShowLocations] = useState({
-    index: -4,
-    display: "none",
-  });
+  const [showloc, setShowLoc] = useState(true);
+  const [showSuggestion, setShowSuggestion] = useState(true);
 
   const getLocations = async (a) => {
     const result = await axios.get(`http://localhost:1111/cityName/${a}`);
     setLoc(result.data);
-    setPosition({
-      index: -2,
-      display: "none",
-    });
-    setPositionTwo({
-      index: -1,
-      display: "none",
-    });
-
-    setShowLocations({
-      index: 1,
-      display: "",
-    });
   };
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    isOpen: isOpenSearchSuggestion,
+    onOpen: onOpenSearchSuggestion,
+    onClose: onCloseSearchSuggestion,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenCalender,
+    onOpen: onOpenCalender,
+    onClose: onCloseCalender,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenLocationBox,
+    onOpen: onOpenLocationBox,
+    onClose: onCloseLocationBox,
+  } = useDisclosure();
+
   return (
     <>
       <Container>
-        <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
-          <ModalOverlay bg="none">
+        {/* Calender */}
+        <Modal
+          isOpen={isOpenCalender}
+          onClose={onCloseCalender}
+          onopen={onOpenCalender}
+        >
+          <ModalOverlay>
             <ModalContent>
-              <DatePicker index={position.index} display={position.display} />
+              <DatePicker />
             </ModalContent>
           </ModalOverlay>
         </Modal>
-
         <Head></Head>
+
+        {/* Search Bar */}
         <SearchBar
           styleColor="white"
-          calender={(index) => AdjustCalender(index)}
-          searchBar={(index) => AdjustSearch(index)}
-          guestList={(index) => adjustGuest(index)}
           getLocations={(query) => getLocations(query)}
           onOpen={onOpen}
+          onOpenCalender={onOpenCalender}
+          onOpenSearchSuggestion={onOpenSearchSuggestion}
+          onOpenLocationBox={onOpenLocationBox}
+          setShowLoc={setShowLoc}
+          setShowSuggestion={setShowSuggestion}
+          isOpenLocationBox={isOpenLocationBox}
         ></SearchBar>
+
         <PictureHolder />
 
-        <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
+        {/* Location Box */}
+        <Modal
+          isOpen={showloc === true ? isOpenLocationBox : showloc}
+          onOpen={onOpenLocationBox}
+          onClose={onCloseLocationBox}
+          trapFocus={false}
+        >
           <ModalOverlay bg="none">
             <ModalContent>
-              <LocationBox
-                index={positionTwo.index}
-                display={positionTwo.display}
-              ></LocationBox>
+              <LocationBox></LocationBox>
             </ModalContent>
           </ModalOverlay>
         </Modal>
 
+        {/* Guest list */}
         <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
           <ModalOverlay bg="none">
             <ModalContent>
-              <GuestList
-                index={positionGuest.index}
-                display={positionGuest.display}
-              ></GuestList>
+              <GuestList></GuestList>
             </ModalContent>
           </ModalOverlay>
         </Modal>
 
-        <SearchSuggestion
-          data={loc}
-          index={showLocations.index}
-          display={showLocations.display}
-        ></SearchSuggestion>
+        {/* Search Suggestion */}
+
+        <Modal
+          isOpen={
+            // setShowSuggestion === true
+            isOpenSearchSuggestion
+            // : setShowSuggestion
+          }
+          onOpen={onOpenSearchSuggestion}
+          onClose={onCloseSearchSuggestion}
+          trapFocus={false}
+          useInert={false}
+        >
+          <ModalOverlay background="none">
+            <ModalContent>
+              <SearchSuggestion data={loc}></SearchSuggestion>
+            </ModalContent>
+          </ModalOverlay>
+        </Modal>
       </Container>
+
+      {/* Container 2 */}
+
       <Container2>
         <TaglineFirst></TaglineFirst>
         <Flex justifyContent="space-between" maxWidth="1200px" margin="auto">
@@ -186,6 +160,7 @@ function App() {
         </Text>
 
         <PictureGrid></PictureGrid>
+        <Footer />
       </Container2>
     </>
   );

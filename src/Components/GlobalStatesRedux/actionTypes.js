@@ -6,6 +6,9 @@ const actionTypes = {
     ADD_CHILDREN: "ADD_CHILDREN",
     ADD_INFANTS: "ADD_INFANTS",
     ADD_PETS: "ADD_PETS",
+    SHOW_PRICE_CHART: "SHOW_PRICE_CHART",
+    ADD_LAT: "ADD_LAT",
+    ADD_LANG: "ADD_LANG",
 };
 
 export default actionTypes;

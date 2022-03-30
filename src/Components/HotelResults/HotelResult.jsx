@@ -1,7 +1,33 @@
 import { Grid, Text, Box, GridItem, Flex, Divider } from "@chakra-ui/react";
-import Maps from "../Map/Map";
+import { useState, useEffect } from "react";
+// import Maps from "../Map/Map";
+import Map from "../MapBox/Map";
 import Hotels from "../Hotels/Hotels";
+import axios from "axios";
+import { useParams } from "react-router";
+import { addLang, addLat } from "../GlobalStatesRedux/action";
+import { useSelector, useDispatch } from "react-redux";
+
 export default function HotelResult() {
+  const [cityDetails, setCityDetails] = useState([{}]);
+  const [hotelDetails, setHotelDetails] = useState([]);
+  const dispatch = useDispatch();
+
+  const param = useParams();
+  const getCityDetails = async () => {
+    const result = await axios.get(
+      `http://localhost:1111/cityDetails/${param.location}`
+    );
+  };
+  const getHotelList = async () => {
+    const result = await axios.get("http://localhost:1111/hotellist");
+    setHotelDetails(result.data);
+  };
+  useEffect(() => {
+    getCityDetails();
+    getHotelList();
+  }, []);
+
   return (
     <Box>
       <Flex>
@@ -13,17 +39,14 @@ export default function HotelResult() {
           marginTop="9.2rem"
         >
           <Box>
-            <Hotels></Hotels>
+            <Hotels
+              cityDetails={cityDetails}
+              hotelDetails={hotelDetails}
+            ></Hotels>
           </Box>
         </Box>
-        <Box
-          position="fixed"
-          maxHeight="80vh"
-          flexBasis="42%"
-          top="23%"
-          right="0"
-        >
-          <Maps />
+        <Box position="fixed" flexBasis="42%" top="23%" right="0">
+          <Map />
         </Box>
       </Flex>
     </Box>

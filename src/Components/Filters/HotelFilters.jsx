@@ -339,7 +339,7 @@ export default function HotelFilters(props) {
               alignItems="start"
               marginBottom="1rem"
             >
-              <Checkbox size="lg" font-family="Flow Circular">
+              <Checkbox size="lg" fontFamily="Flow Circular">
                 <Text marginLeft=".5rem" fontSize="1rem">
                   Wifi
                 </Text>

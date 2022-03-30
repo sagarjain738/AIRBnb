@@ -1,28 +1,33 @@
 import { Flex, Divider, Text, Center, Input, Box } from "@chakra-ui/react";
-import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
 import { Link, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
+import { addLat, addLang } from "../GlobalStatesRedux/action";
+import { useEffect, useState } from "react";
 
 export default function SearchBar({
   styleColor,
-  calender,
-  searchBar,
-  guestList,
   getLocations,
+  onOpenCalender,
   onOpen,
+  onOpenSearchSuggestion,
+  onOpenLocationBox,
+  isOpenLocationBox,
+  setShowLoc,
+  setShowSuggestion,
 }) {
-  const [seacrhQuery, setSearchQuery] = useState("");
   const handleData = (a) => {
-    // setSearchQuery(a);
     getLocations(a);
   };
   const { location, startDate, endDate, adults, childrens, infants, pets } =
     useSelector((store) => store);
-
   const dispatch = useDispatch();
-
+  const [locationWidth, setLocationWidth] = useState("30%");
+  // useEffect(() => {
+  //   setLocationWidth(isOpenLocationBox === true ? "20%" : "30%");
+  // }, [isOpenLocationBox]);
   return (
     <Flex
       justifyContent="center"
@@ -33,10 +38,11 @@ export default function SearchBar({
       margin="0 auto 2rem auto"
       borderRadius="full"
       position="relative"
+      border="1px solid lightgrey"
     >
       {/* ************************** FIRST COMPONENT ************************************************ */}
       <Box
-        flexBasis="30%"
+        flexBasis={locationWidth}
         borderRadius="40px"
         textAlign="left"
         _hover={{ background: "#DDDDDD" }}
@@ -44,7 +50,10 @@ export default function SearchBar({
         cursor="pointer"
         padding="1.2% 0"
         height="100%"
-        onClick={() => searchBar(1)}
+        onClick={() => {
+          onOpenLocationBox();
+          // setLocationWidth("20%");
+        }}
       >
         <Text
           fontSize="14px"
@@ -52,8 +61,7 @@ export default function SearchBar({
           marginLeft="1.8rem"
           cursor="pointer"
           onClick={() => {
-            searchBar(1);
-            onOpen();
+            onOpenLocationBox();
           }}
         >
           Location
@@ -72,13 +80,18 @@ export default function SearchBar({
           focusBorderColor="white"
           _placeholder={{ color: "#222222" }}
           cursor="text"
-          onClick={() => {
-            onOpen();
-            searchBar(1);
-          }}
+          onClick={() => onOpenLocationBox()}
           onChange={(a) => {
-            searchBar(-5);
-            handleData(a.target.value);
+            if (a.target.value.length === 0) {
+              onOpenLocationBox();
+              setShowSuggestion(false);
+              setShowLoc(true);
+            } else {
+              setShowSuggestion(true);
+              setShowLoc(false);
+              onOpenSearchSuggestion();
+              handleData(a.target.value);
+            }
           }}
         ></Input>
       </Box>
@@ -95,8 +108,7 @@ export default function SearchBar({
         cursor="pointer"
         padding="1.2% 0"
         onClick={() => {
-          calender(1);
-          onOpen();
+          onOpenCalender();
         }}
       >
         <Text
@@ -105,8 +117,7 @@ export default function SearchBar({
           marginLeft="1.7rem"
           cursor="pointer"
           onClick={() => {
-            calender(1);
-            onOpen();
+            onOpenCalender();
           }}
         >
           Check in
@@ -122,8 +133,7 @@ export default function SearchBar({
           background="transparent"
           _hover={{ background: "transparent" }}
           onClick={() => {
-            calender(1);
-            onOpen();
+            onOpenCalender();
           }}
         >
           Ad dates
@@ -143,8 +153,7 @@ export default function SearchBar({
         fontSize="14px"
         cursor="pointer"
         onClick={() => {
-          calender(1);
-          onOpen();
+          onOpenCalender();
         }}
       >
         <Text
@@ -153,8 +162,7 @@ export default function SearchBar({
           marginLeft="1.7rem"
           cursor="pointer"
           onClick={() => {
-            calender(1);
-            onOpen();
+            onOpenCalender();
           }}
         >
           Check out
@@ -170,8 +178,7 @@ export default function SearchBar({
           fontSize="14px"
           color="grey"
           onClick={() => {
-            calender(1);
-            onOpen();
+            onOpenCalender();
           }}
         >
           Add dates
@@ -190,7 +197,7 @@ export default function SearchBar({
         borderRadius="40px"
         _hover={{ background: "#DDDDDD" }}
         transition=".2s"
-        onClick={() => guestList(1)}
+        onClick={() => onOpen()}
       >
         <Text
           fontSize="14px"
@@ -198,7 +205,6 @@ export default function SearchBar({
           marginLeft="1.7rem"
           cursor="pointer"
           onClick={() => {
-            guestList(1);
             onOpen();
           }}
         >
@@ -211,7 +217,6 @@ export default function SearchBar({
           fontSize="14px"
           color="grey"
           onClick={() => {
-            guestList(1);
             onOpen();
           }}
         >
@@ -232,10 +237,31 @@ export default function SearchBar({
         alignItems="center"
         _hover={{ background: "#92174D" }}
       >
-        <Link to={`/hotelinfo/${location}`}>
+        {/* <Link to={`/hotelinfo/${location}`}> */}
+        <Link
+          to={`/hotelinfo/${location}/?page=${1}`}
+          onClick={async () => {
+            const [{ lat, lng }] = await gerRecords(location);
+            dispatch(addLat(lat));
+            dispatch(addLang(lng));
+            console.log("this is lat & lang info", lat, lng);
+          }}
+        >
           <BiSearch fontSize="1.5rem" color="white" cursor="pointer"></BiSearch>
         </Link>
       </Flex>
     </Flex>
   );
 }
+
+const gerRecords = async (location) => {
+  const result = await axios.get(
+    `http://localhost:1111/cityDetails/${location}`
+  );
+
+  if (result.data.length >= 0) {
+    return result.data;
+  } else {
+    return "";
+  }
+};

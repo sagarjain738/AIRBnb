@@ -11,45 +11,46 @@ import {
   Divider,
   Input,
   Link,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  useDisclosure,
 } from "@chakra-ui/react";
 
 import React, { useEffect } from "react";
 import { BiMinus } from "react-icons/bi";
 
 export default function CostSelection(props) {
-  const { variant, children, display, index, ...rest } = props;
+  const { variant, children, price, ...rest } = props;
   const styles = useStyleConfig("LocationBoxx", { variant });
-
   return (
-    <Box display={display} zIndex={index}>
-      <Box
-        __css={styles}
-        style={{
-          maxWidth: "32.5%",
-          height: "20.5rem",
-          display: { display },
-          position: "absolute",
-          left: ".2rem",
-          top: "3rem",
-          borderRadius: "10px",
-          padding: "0 0 0 0",
-          border: "1px solid lightGrey",
-        }}
-        shadow="2xl"
+    <Box
+      __css={styles}
+      style={{
+        minWidth: "32.5%",
+        minheight: "20.5rem",
+        position: "absolute",
+        zIndex: 1000,
+        top: "5rem",
+        left: "-24rem",
+        borderRadius: "10px",
+        padding: "0 0 0 0",
+        border: "1px solid lightGrey",
+      }}
+      shadow="2xl"
+    >
+      <Text
+        lineHeight="2rem"
+        fontSize="1rem"
+        fontWeight="400"
+        paddingLeft="1.2rem"
+        paddingTop="1.2rem"
       >
-        <Text
-          lineHeight="2rem"
-          fontSize="1rem"
-          fontWeight="400"
-          paddingLeft="1.2rem"
-          paddingTop="1.2rem"
-        >
-          {" "}
-          The average nightly price is ₹4,696
-        </Text>
-        <Box>
-          <SliderThumbWithTooltip></SliderThumbWithTooltip>
-        </Box>
+        {" "}
+        The average nightly price is ₹4,696
+      </Text>
+      <Box>
+        <SliderThumbWithTooltip></SliderThumbWithTooltip>
       </Box>
     </Box>
   );

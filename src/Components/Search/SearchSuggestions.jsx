@@ -1,18 +1,35 @@
-import { Box, useStyleConfig, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  useStyleConfig,
+  Flex,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+} from "@chakra-ui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import { useSelector, useDispatch } from "react-redux";
 import { addLocation } from "../GlobalStatesRedux/action";
 
 export default function SearchSuggestion(props) {
-  const { variant, children, display, index, data, onOpen, ...rest } = props;
+  const {
+    variant,
+    children,
+    display,
+    index,
+    data,
+    onCloseSearchSuggestion,
+    onOpenSearchSuggestion,
+    isOpenSearchSuggestion,
+    ...rest
+  } = props;
   const styless = useStyleConfig("LocationBoxx", { variant });
   const store = useSelector((store) => store);
   const dispatch = useDispatch();
   return (
     <Box
-      left="15.7rem"
-      top="10rem"
+      left="-13rem"
+      top="6rem"
       __css={styless}
       minWidth="25rem"
       minHeight="9rem"
@@ -24,6 +41,7 @@ export default function SearchSuggestion(props) {
         if (b <= 4) {
           return (
             <Flex
+              key={b}
               textAlign="center"
               _hover={{
                 cursor: "pointer",
@@ -44,7 +62,10 @@ export default function SearchSuggestion(props) {
               </Box>
               <Box
                 variant="ghost"
-                _hover={{ textDecoration: "none", background: "lightGrey" }}
+                _hover={{
+                  textDecoration: "none",
+                  background: "lightGrey",
+                }}
                 marginLeft="1rem"
                 onClick={() => dispatch(addLocation(a.name))}
               >

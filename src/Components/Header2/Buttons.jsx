@@ -9,6 +9,7 @@ import {
   ModalContent,
   Box,
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 import { useState } from "react";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
@@ -18,12 +19,11 @@ import HotelFilters from "../Filters/HotelFilters";
 
 export default function Buttons() {
   const { onOpen, isOpen, onClose } = useDisclosure();
-  const [show, setShow] = useState({
-    index: -1,
-    display: "none",
-  });
-  const [arrow, setArrow] = useState("down");
-
+  const {
+    onOpen: openPrice,
+    isOpen: isOpenPrice,
+    onClose: onClosePrice,
+  } = useDisclosure();
   return (
     <Box>
       <Flex
@@ -34,26 +34,15 @@ export default function Buttons() {
           // position: "relative",
           justifyContent: "space-around",
           paddingRight: ".5%",
+          overflow: "unset",
         }}
       >
-        {/* <Modal onOpen={onOpen} isOpen={isOpen} onClose={onClose}>
-          <ModalOverlay>
-            <ModalContent>
-              <CostSelection
-                display={show.display}
-                index={show.index}
-              ></CostSelection>
-            </ModalContent>
-          </ModalOverlay>
-        </Modal> */}
-        <CostSelection
-          display={show.display}
-          index={show.index}
-        ></CostSelection>
-
-        {/* <HotelFilters index={close.index} display={close.display} /> */}
-
         <ModalWork onOpen={onOpen} isOpen={isOpen} onClose={onClose} />
+        <ModalPrice
+          openPrice={openPrice}
+          isOpenPrice={isOpenPrice}
+          onClosePrice={onClosePrice}
+        ></ModalPrice>
         <Button
           style={{
             background: "transparent",
@@ -65,23 +54,10 @@ export default function Buttons() {
           }}
           _hover={{ borderColor: "black" }}
           onClick={() => {
-            setShow((a) => {
-              if (a.display === "none" && a.index === -1) {
-                setArrow("up");
-                return { index: 1, display: "" };
-              } else {
-                setArrow("down");
-                return { index: -1, display: "none" };
-              }
-            });
+            openPrice();
           }}
         >
-          Price
-          {arrow === "down" ? (
-            <BiChevronDown fontSize="1.5rem"></BiChevronDown>
-          ) : (
-            <BiChevronUp fontSize="1.5rem"></BiChevronUp>
-          )}
+          Price <BiChevronDown fontSize="1.5rem"></BiChevronDown>
         </Button>
         <Button
           style={{
@@ -180,11 +156,11 @@ export default function Buttons() {
 }
 
 function ModalWork(props) {
-  const { isOpen, onClose } = props;
+  const { isOpen, onOpen, onClose } = props;
 
   return (
     <Box>
-      <Modal isOpen={isOpen} size="3xl" onClose={onClose}>
+      <Modal onOpen={onOpen} isOpen={isOpen} size="3xl" onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           {/* <ModalCloseButton /> */}
@@ -198,5 +174,23 @@ function ModalWork(props) {
         </ModalContent>
       </Modal>
     </Box>
+  );
+}
+
+function ModalPrice(props) {
+  const { openPrice, isOpenPrice, onClosePrice } = props;
+  return (
+    <Modal
+      onOpen={openPrice}
+      isOpen={isOpenPrice}
+      size="lg"
+      onClose={onClosePrice}
+    >
+      <ModalOverlay background="none">
+        <ModalContent>
+          <CostSelection></CostSelection>
+        </ModalContent>
+      </ModalOverlay>
+    </Modal>
   );
 }

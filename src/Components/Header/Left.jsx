@@ -1,7 +1,7 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { FaAirbnb } from "react-icons/fa";
 import "@fontsource/roboto-mono";
-
+import { Link } from "react-router-dom";
 export default function Left() {
   return (
     <Flex
@@ -12,15 +12,18 @@ export default function Left() {
     >
       {/* <Image src="src\Components\Assets\airbnb.png" w="6.5rem"></Image> */}
       <FaAirbnb fontSize="2.3rem"></FaAirbnb>
-      <Text
-        fontFamily="sans-serif"
-        fontWeight="bold"
-        letterSpacing="-.8px"
-        marginLeft="2px"
-        fontSize="1.4rem"
+      <Link
+        style={{
+          fontFamily: "sans-serif",
+          fontWeight: "bold",
+          letterSpacing: "-.8px",
+          marginLeft: "2px",
+          fontSize: "1.4rem",
+        }}
+        to="/"
       >
         ɑirbnb
-      </Text>
+      </Link>
     </Flex>
   );
 }
