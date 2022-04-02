@@ -17,7 +17,7 @@ function CalendarExample() {
   };
   return (
     <Calendar
-      clas
+      // clas
       onDayClick={handleDayClick}
       modifiers={modifiers}
       locale={enGB}
