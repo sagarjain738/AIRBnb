@@ -3,6 +3,7 @@ import mapboxgl, { MapboxDirections } from "mapbox-gl";
 import { useRef, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { ZoomControl, CompassControl } from "mapbox-gl-controls";
+
 export default function Map({}) {
   const {
     lat: lattitude,
@@ -10,7 +11,7 @@ export default function Map({}) {
     location,
   } = useSelector((store) => store);
 
-  console.log("This is map is Map file", location, lattitude, langitute);
+  // console.log("This is map is Map file", location, lattitude, langitute);
   mapboxgl.accessToken =
     "pk.eyJ1Ijoic2FnYXJqYWluNzM4IiwiYSI6ImNsMGtwMDNnczA0ZWMzaXFkb2dyZGFlbTkifQ.7F9Y1lACkG3HPWhViJ9bVg";
 

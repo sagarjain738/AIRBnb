@@ -1,0 +1,1505 @@
+[{
+        "hostType": "Superhost",
+        "hostname": "Bharat",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Sumit",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Owner",
+        "hostname": "Jatin",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Co-Owner",
+        "hostname": "Smita",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Superhost",
+        "hostname": "Anandi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Bharat",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Sumit",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Owner",
+        "hostname": "Jatin",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Co-Owner",
+        "hostname": "Smita",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Superhost",
+        "hostname": "Anandi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Bharat",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Sumit",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Owner",
+        "hostname": "Jatin",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Co-Owner",
+        "hostname": "Smita",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Superhost",
+        "hostname": "Anandi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Bharat",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "hostType": "Superhost",
+        "hostname": "Sumit",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Owner",
+        "hostname": "Jatin",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Co-Owner",
+        "hostname": "Smita",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Superhost",
+        "hostname": "Anandi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    },
+    {
+        "locationId": "6238173699ed8acab3b9f029",
+        "hostType": "Superhost",
+        "hostname": "Anandi",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "aboutTheSpace": [{
+            "The space": "Located in the heart of koregaon park. The room is very airy and suits the comfort needs of guests coming for leasure of all age groups. The terrace consists of an outdoor seating area, garden, equipped kitchenette and open air jacuzzi. The room consists of a kingsize bed, television, refrigerator and a wardrobe.",
+            "Guest access": "The whole floor is theirs which includes the private room with attached bathroom, terrace and the outdoor seating area.",
+            "Other things to note": "Keys of the room can be collected from the security guy. Strictly no smoking in the room. No visiting guests will be allowed in our apartment."
+        }],
+        "amenities": [{
+            "Scenic views": "City skyline view",
+            "Bathroom": ["Bath",
+                "Hair dryer",
+                "Cleaning products",
+                "Shampoo",
+                "Body soap",
+                "Hot water"
+            ],
+            "Bedroom and laundry": [{ "Essentials": "Towels, bed sheets, soap and toilet paper", "Bed linen": "Cotton linen" }, "Hangers", "Extra pillows and blankets", "Room-darkening shades", "Iron", "Clothes drying rack", "Clothes storage: wardrobe"],
+            "Entertainment": ["TV with standard cable/satellite", "Books and reading material"],
+            "Heating and cooling": ["Air conditioning",
+                "Portable fans"
+            ],
+            "Home safety": ["Fire extinguisher",
+                "First aid kit"
+            ],
+            "Internet and office": ["Wifi",
+                {
+                    "Dedicated workspace": "Guests have a desk or table that’s used just for working, along with a comfortable chair."
+                }
+            ],
+            "Kitchen and dining": [{
+                    "Kitchen": "Space where guests can cook their own meals",
+                    "Cooking basics": "Pots and pans, oil, salt and pepper",
+                    "Dishes and silverware": "Bowls, chopsticks, plates, cups, etc."
+                },
+                "Refrigerator",
+                "Microwave",
+                "Kettle",
+                "Wine glasses"
+            ],
+            "Location features": [{ "Private entrance": "Separate street or building entrance" }, "Launderette nearby"],
+            "Outdoor": [{
+                    "Private backyard – Not fully fenced": "An open space on the property usually covered in grass"
+                },
+                "Private patio or balcony",
+                "Outdoor furniture",
+                "Outdoor dining area",
+                "Private outdoor kitchen",
+                "BBQ grill"
+            ],
+            "Parking and facilities": ["Free parking on premises",
+                "Free on-street parking", {
+                    "Lift": "The home or building has a lift that’s at least 52 inches (132cm) deep and a doorway at least 32 inches (81cm) wide."
+                }
+            ],
+            "Services": [{
+                    "Luggage drop-off allowed": "For guests' convenience when they are arriving early or departing late",
+                    "Building staff": "Someone is available 24 hours a day to let guests in"
+                }, "Smoking allowed",
+                "Self check-in"
+            ],
+            "Not included": [{
+                "Smoke alarm": "There is no smoke alarm on the property.",
+                "Carbon monoxide alarm": "Host has indicated that no carbon monoxide detector is necessary. Contact the host with any questions."
+
+            }]
+        }]
+    }
+]
